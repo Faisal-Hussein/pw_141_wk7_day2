@@ -46,6 +46,40 @@ Create two people using the 'new' keyword, and print
 both of their infos and increment one persons
 age by 3 years. Use an arrow function for both methods
 */
+function Person(firstName, lastName, age){
+    this.first_name = firstName;
+    this.last_name = lastName;
+    this.age = age;
+
+    this.printInfo = function () {
+        console.log(this.first_name + ' ' + this.last_name + ' ' + this.age)
+    }
+
+    this.agesUp = function() {
+        this.age++;
+    }
+}
+
+const dylan = new Person("Dylan", "Smith", "33");
+
+const faisal = new Person("Faisal", "Hussein", "25");
+
+dylan.printInfo();
+
+dylan.agesUp();
+
+dylan.printInfo();
+
+faisal.printInfo();
+
+faisal.agesUp();
+
+faisal.printInfo();
+faisal.agesUp();
+faisal.agesUp();
+faisal.agesUp();
+
+faisal.printInfo();
 
 
 
